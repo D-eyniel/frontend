@@ -185,6 +185,120 @@ body {
     border-color: #1abc9c;
     box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
   }
+  h2{
+    text-align: center;
+  }
   
-  
-  
+  /* Class Schedule Form Styling */
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px; /* Ensures fields don't get too small */
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333333;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+button[type="submit"] {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .form-group {
+    min-width: 100%;
+  }
+}
+/* Class Schedule Section Highlight */
+.class-schedule-form {
+  margin-top: 20px;
+  background-color: #f9f9f9; /* Light background color for emphasis */
+  border: 2px solid white; /* Highlight with a green border */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+/* Hover Effect for Emphasis */
+.class-schedule-form:hover {
+  transform: translateY(-3px); /* Slight elevation effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+/* Header Styling for Class Schedule */
+.class-schedule-form h2 {
+  color: #4caf50; /* Green text color to match the border */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+/* Label and Input Field Styling */
+.class-schedule-form label {
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.class-schedule-form input,
+.class-schedule-form select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* Save Button Small Style */
+.class-schedule-form button {
+  margin-top: 15px;
+  padding: 5px 10px;
+  font-size: 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.class-schedule-form button:hover {
+  background-color: #45a049;
+}

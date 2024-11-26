@@ -92,7 +92,8 @@ function App() {
 
   return (
     <div className="login-container">
-      <div className="statue-image"></div>
+      <div className="statue-image">
+      </div>
       <div className="right-panel">
         <div className={`form-container ${fadeClass}`}>
           {renderPage()}

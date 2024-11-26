@@ -6,7 +6,6 @@ body, html {
 }
 
 .background {
-  background: url('C:\Users\melvi\frontend\frontend\src\assets\background.jpg') no-repeat center center / cover;
   min-height: 100vh;
   display: flex;
   justify-content: center;

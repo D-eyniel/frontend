@@ -23,7 +23,6 @@ body {
 
 .statue-image {
   flex: 1;
-  background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
   background-size: cover;
   position: relative;
   transition: opacity 0.5s ease-in-out;
@@ -35,6 +34,7 @@ body {
   text-align: center;
   opacity: 1;
 }
+
 
 @keyframes fadeIn {
   0% {
@@ -223,7 +223,7 @@ form {
 
 @media (max-width: 768px) {
   .login-container {
-    background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
+
     background-size: cover;
     flex-direction: column;
   }
@@ -233,7 +233,7 @@ form {
   }
 
   .right-panel {
-    background: url("C:/Users/melvi/frontend/frontend/src/assets/Bg.jpg") no-repeat center center;
+
     background-size: cover;
     flex: none;
     width: 100%;

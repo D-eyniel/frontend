@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Admin.css";
 
 function AdminDashboard() {
-  const [activePanel, setActivePanel] = useState("Overview");
+  const [activePanel, setActivePanel] = useState("Dashboard");
 
   const handleMenuClick = (panel) => {
     setActivePanel(panel);
@@ -16,6 +16,12 @@ function AdminDashboard() {
         </div>
         <nav>
           <ul>
+            <li
+              className={activePanel === "Dashboard" ? "active" : ""}
+              onClick={() => handleMenuClick("Dashboard")}
+            >
+              Dashboard
+            </li>
             <li
               className={activePanel === "Overview" ? "active" : ""}
               onClick={() => handleMenuClick("Overview")}
@@ -46,22 +52,27 @@ function AdminDashboard() {
       </aside>
 
       <main className="main-content">
-
         <section className="panel">
+          {activePanel === "Dashboard" && (
+            <div>
+              <h2>Dashboard</h2>
+              <p>Welcome to the main dashboard.</p>
+            </div>
+          )}
           {activePanel === "Overview" && (
             <div>
-              <h2>Overview</h2>
-              <p>Welcome to the Admin Dashboard.</p>
+              <h2>Students</h2>
+              <p>Manage student records.</p>
             </div>
           )}
           {activePanel === "Users" && (
             <div>
-              <h2>Enrolled</h2>
+              <h2>Enrollment</h2>
               <p>Manage enrolled students.</p>
               <div className="search-bar">
-                <input 
-                  type="text" 
-                  placeholder="Search enrollment..." 
+                <input
+                  type="text"
+                  placeholder="Search enrollment..."
                 />
                 <select className="filter-dropdown">
                   <option value="all">Filter by All</option>
@@ -72,21 +83,56 @@ function AdminDashboard() {
                   <option value="all">Filter by All</option>
                   <option value="Year">Filter by Year Level</option>
                   <option value="regular">Regular</option>
-                  <option value="irregular">Ireggular</option>
-
+                  <option value="irregular">Irregular</option>
                 </select>
               </div>
             </div>
           )}
-
-
-
           {activePanel === "Reports" && (
-            <div>
-              <h2>Reports</h2>
-              <p>View reports here.</p>
-            </div>
-          )}
+  <div>
+    <h2>Class Schedule</h2>
+    <p></p>
+    <br></br>
+    <form className="class-schedule-form">
+      <div className="flex-container">
+        <div className="form-group">
+          <label htmlFor="course">Course</label>
+          <input
+            type="text"
+            id="course"
+            placeholder="Enter course name"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="section">Section</label>
+          <input
+            type="text"
+            id="section"
+            placeholder="Enter section"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="semester">Semester</label>
+          <select id="semester">
+            <option value="1st">1st Semester</option>
+            <option value="2nd">2nd Semester</option>
+            <option value="summer">Summer</option>
+          </select>
+        </div>
+        <div className="form-group">
+          <label htmlFor="year">Year Level</label>
+          <select id="year">
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Save Schedule</button>
+    </form>
+  </div>
+)}
           {activePanel === "Settings" && (
             <div>
               <h2>Curriculum</h2>
