@@ -94,7 +94,6 @@ function App() {
   return (
     <div className="login-container">
       <div className="statue-image">
-        <img src={Background} ></img>
       </div>
       <div className="right-panel">
         <div className={`form-container ${fadeClass}`}>

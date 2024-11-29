@@ -12,6 +12,7 @@ body {
 }
 
 .right-panel {
+  z-index: 2;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -22,6 +23,9 @@ body {
 }
 
 .statue-image {
+  background-image: url("../../src/assets/Bg.jpg") ;
+  background-position: center center;
+  z-index: 1;
   flex: 1;
   background-size: cover;
   position: relative;
@@ -233,7 +237,7 @@ form {
   }
 
   .right-panel {
-
+    background-image: url("../../src/assets/Bg.jpg");
     background-size: cover;
     flex: none;
     width: 100%;
@@ -268,6 +272,12 @@ form {
   .login-button, .register-button {
     font-size: 0.8rem;
   }
+
+  h2 {
+    width: 100%;
+    font-size: 20px;
+    margin-left: 7%;
+  }
   
 }
 
@@ -283,6 +293,7 @@ form {
   border-radius: 5px;
   font-size: 14px;
   color: #333;
+  z-index: 3;
 }
 
 .footer p {

@@ -261,9 +261,10 @@ body, html {
       color: #333;
       cursor: pointer;
       position: absolute;
-      top: 5%; 
+      top: 40px; 
       left: 17%; 
       z-index: 1000; 
+      position: fixed;
     }
     
 
@@ -328,6 +329,7 @@ body, html {
       .form-group input {
         padding: 12px;
         font-size: 14px;
+        width: 300px;
       }
 
       .bottom-container {
@@ -409,8 +411,8 @@ body, html {
       border: 1px solid #ddd;
       border-radius: 8px;
       outline: none;
-      max-width: 600px;
-      width: 70%; 
+      max-width: 400px;
+      width: 80%; 
       box-sizing: border-box;
       transition: border 0.3s ease, box-shadow 0.3s ease;
       background-color: #f9f9f9;

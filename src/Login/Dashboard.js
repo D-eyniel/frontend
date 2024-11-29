@@ -8,7 +8,7 @@ function App() {
 
   const handleMenuClick = (panel) => {
     setActivePanel(panel);
-    setIsSidebarVisible(false);  // Close sidebar when a menu item is clicked
+    setIsSidebarVisible(true); // Automatically hide the sidebar
   };
 
   const toggleSidebar = () => {
@@ -40,7 +40,7 @@ function App() {
             <button className="hamburger" onClick={toggleSidebar}>
               &#9776;
             </button>
-            <div className={`sidebar-wrapper ${!isSidebarVisible ? 'hidden' : ''}`}>
+            <div className={`sidebar-wrapper ${!isSidebarVisible ? "hidden" : ''}`}>
               <aside className="sidebar">
                 <div className="logo">
                   <img src="cvsu.png" alt="Logo" />
@@ -211,115 +211,115 @@ function App() {
                 )}
                 {activePanel === "Registration" && (
                   <div>
-                    <div className="panel-section">
-                      <form className="profile-form">
-                        <div className="form-group">
-                          <div>
-                            <label htmlFor="last-name">Last Name</label>
-                            <input
-                              type="text"
-                              id="last-name"
-                              name="name"
-                              placeholder="Enter your Last Name"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label htmlFor="student-email">Email</label>
-                            <input
-                              type="email"
-                              id="student-email"
-                              name="email"
-                              placeholder="Enter your email"
-                              required
-                            />
-                          </div>
-                          
-                          <div>
-                            <label htmlFor="first-name">First Name</label>
-                            <input
-                              type="text"
-                              id="first-year"
-                              placeholder="Enter your First Name"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label htmlFor="gender">Gender</label>
-                              <select className="dropdown-gender">
-                              <option value="Male">Male</option>
-                              <option value="Female">Female</option>
-                              </select >
-                          </div>
-
-                          <div>
-                            <label htmlFor="middle-name">Middle Name</label>
-                            <input
-                              type="text"
-                              id="middle-name"
-                              placeholder="Enter your Middle Name"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label htmlFor="student-age">Age</label>
-                            <input
-                              type="number"
-                              id="student-age"
-                              placeholder="Enter your age"
-                              required
-                            />
-                          </div>
-
-                          <div>
-                            <label htmlFor="student-number">Student Number</label>
-                            <input
-                              type="text"
-                              id="student-number"
-                              name="student-number"
-                              placeholder="Enter your student number"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label htmlFor="guardian-name">Guardian's Name</label>
-                            <input
-                              type="text"
-                              id="guardian-name"
-                              name="guardian-name"
-                              placeholder="Enter your guardian's name"
-                              required
-                            />
-                          </div>
-
-                          <div>
-                            <label htmlFor="guardian-phone">Guardian's Phone Number</label>
-                            <input
-                              type="tel"
-                              id="guardian-phone"
-                              name="guardian-phone"
-                              placeholder="Enter your guardian's phone number"
-                              required
-                            />
-                          </div>
-                          <div>
-                            <label htmlFor="address">Address</label>
-                            <input
-                              type="text"
-                              id="address"
-                              name="address"
-                              placeholder="Enter your Address"
-                              required
-                            />
-                          </div>
+                  <div className="panel-section">
+                    <form className="profile-form">
+                      <div className="form-group">
+                        <div>
+                          <label htmlFor="last-name">Last Name</label>
+                          <input
+                            type="text"
+                            id="last-name"
+                            name="name"
+                            placeholder="Enter your Last Name"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="student-email">Email</label>
+                          <input
+                            type="email"
+                            id="student-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                          />
+                        </div>
+                        
+                        <div>
+                          <label htmlFor="first-name">First Name</label>
+                          <input
+                            type="text"
+                            id="first-year"
+                            placeholder="Enter your First Name"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="gender">Gender</label>
+                            <select className="dropdown-gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            </select >
                         </div>
 
-                        <div className="form-group">
-                          <button type="submit" className="submit-button">Register</button>
+                        <div>
+                          <label htmlFor="middle-name">Middle Name</label>
+                          <input
+                            type="text"
+                            id="middle-name"
+                            placeholder="Enter your Middle Name"
+                            required
+                          />
                         </div>
-                      </form>
-                    </div>
+                        <div>
+                          <label htmlFor="student-age">Age</label>
+                          <input
+                            type="number"
+                            id="student-age"
+                            placeholder="Enter your age"
+                            required
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="student-number">Student Number</label>
+                          <input
+                            type="text"
+                            id="student-number"
+                            name="student-number"
+                            placeholder="Enter your student number"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="guardian-name">Guardian's Name</label>
+                          <input
+                            type="text"
+                            id="guardian-name"
+                            name="guardian-name"
+                            placeholder="Enter your guardian's name"
+                            required
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="guardian-phone">Guardian's Phone Number</label>
+                          <input
+                            type="tel"
+                            id="guardian-phone"
+                            name="guardian-phone"
+                            placeholder="Enter your guardian's phone number"
+                            required
+                          />
+                        </div>
+                        <div>
+                          <label htmlFor="address">Address</label>
+                          <input
+                            type="text"
+                            id="address"
+                            name="address"
+                            placeholder="Enter your Address"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div className="form-group">
+                        <button type="submit" className="submit-button">Register</button>
+                      </div>
+                    </form>
                   </div>
+                </div>
                 )}
                 {activePanel === "Payment Info" && (
                   <div>
