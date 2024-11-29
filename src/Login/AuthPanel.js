@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AuthPanel.css";
 import ResetPassword from "./ResetPassword";
+import Background from "../../src/assets/Bg.jpg"
 
 function App() {
   const [activePage, setActivePage] = useState("login");
@@ -93,6 +94,7 @@ function App() {
   return (
     <div className="login-container">
       <div className="statue-image">
+        <img src={Background} ></img>
       </div>
       <div className="right-panel">
         <div className={`form-container ${fadeClass}`}>

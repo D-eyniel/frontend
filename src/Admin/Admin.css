@@ -1,8 +1,7 @@
-/* General styles */
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif; /* Use a more modern font */
-  background-color: #f4f5f7; /* Light background for the whole page */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f5f7;
   width: 100vw;
 }
 
@@ -12,26 +11,25 @@ body {
   overflow: hidden;
 }
 
-/* Sidebar */
 .sidebar {
   margin-top: 1%;
   margin-left: 1%;
   width: 250px;
-  background-color: #2b3e50; /* Slightly muted color for elegance */
+  background-color: #2b3e50;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  border-right: 1px solid #dcdcdc; /* Divider for the sidebar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #dcdcdc;
 }
 
 .sidebar .logo img {
-  width: 200px; /* Slightly larger logo */
+  width: 200px;
   margin-bottom: 20px;
-  border-radius: 8px; /* Rounded corners for logo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around logo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar nav ul {
@@ -47,19 +45,19 @@ body {
   text-align: center;
   cursor: pointer;
   color: white;
-  transition: all 0.3s ease; /* Smooth transition for hover effects */
-  border-radius: 8px; /* Rounded corners for buttons */
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .sidebar nav ul li.active {
-  background-color: #038130; /* Bright accent for active menu */
+  background-color: #038130;
   color: white;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3); /* Highlight shadow */
+  box-shadow: 0 4px 8px rgba(26, 188, 156, 0.3);
 }
 
 .sidebar nav ul li:hover {
-  background-color: #139939; /* Softer hover effect */
+  background-color: #139939;
 }
 
 .sidebar .logout {
@@ -79,7 +77,6 @@ body {
   box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
 }
 
-/* Main content */
 .main-content {
   flex: 1;
   display: flex;
@@ -87,19 +84,17 @@ body {
   background-color: #f4f5f7;
 }
 
-/* Panel */
 .panel {
   padding: 25px;
-  background-color: #ffffff; /* White panel background */
+  background-color: #ffffff;
   margin: 20px;
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Elevation effect */
-  width: 90%; /* Same width as header */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
-/* Search bar inside the panel */
 .panel .search-bar {
-  margin-top: 20px; /* Add margin to separate from the title */
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -109,9 +104,9 @@ body {
   padding: 10px 15px;
   font-size: 14px;
   width: 100%;
-  max-width: 400px; /* Search bar width adjustment */
+  max-width: 400px;
   border: 1px solid #dcdcdc;
-  border-radius: 20px; /* Rounded input */
+  border-radius: 20px;
   transition: border-color 0.3s ease;
 }
 
@@ -123,14 +118,13 @@ body {
 
 .panel h2 {
   margin-top: 0;
-  color: #2c3e50; /* Darker heading */
+  color: #2c3e50;
 }
 
 .panel p {
-  color: #7f8c8d; /* Subtle text color */
+  color: #7f8c8d;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .sidebar {
     width: 200px;
@@ -145,51 +139,49 @@ body {
   }
 }
 
-
 .panel .search-bar {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .panel .search-bar input {
-    padding: 10px 15px;
-    font-size: 14px;
-    width: 100%;
-    max-width: 250px;
-    border: 1px solid #dcdcdc;
-    border-radius: 20px; 
-    transition: border-color 0.3s ease;
-  }
-  
-  .panel .search-bar input:focus {
-    outline: none;
-    border-color: #1abc9c;
-    box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
-  }
-  
-  .panel .filter-dropdown {
-    padding: 10px 15px;
-    font-size: 14px;
-    border: 1px solid #dcdcdc;
-    border-radius: 20px;
-    background-color: white;
-    transition: border-color 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .panel .filter-dropdown:focus {
-    outline: none;
-    border-color: #1abc9c;
-    box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
-  }
-  h2{
-    text-align: center;
-  }
-  
-  /* Class Schedule Form Styling */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.panel .search-bar input {
+  padding: 10px 15px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 250px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.panel .search-bar input:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+}
+
+.panel .filter-dropdown {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 20px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.panel .filter-dropdown:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 8px rgba(26, 188, 156, 0.3);
+}
+
+h2 {
+  text-align: center;
+}
 
 .flex-container {
   display: flex;
@@ -202,7 +194,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  min-width: 200px; /* Ensures fields don't get too small */
+  min-width: 200px;
 }
 
 label {
@@ -241,7 +233,6 @@ button[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column;
@@ -251,33 +242,34 @@ button[type="submit"]:hover {
     min-width: 100%;
   }
 }
-/* Class Schedule Section Highlight */
+
 .class-schedule-form {
   margin-top: 20px;
-  background-color: #f9f9f9; /* Light background color for emphasis */
-  border: 2px solid white; /* Highlight with a green border */
+  background-color: #f9f9f9;
+  border: 2px solid white;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-/* Hover Effect for Emphasis */
+
 .class-schedule-form:hover {
-  transform: translateY(-3px); /* Slight elevation effect on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-/* Header Styling for Class Schedule */
+
 .class-schedule-form h2 {
-  color: #4caf50; /* Green text color to match the border */
+  color: #4caf50;
   font-weight: bold;
   margin-bottom: 15px;
 }
-/* Label and Input Field Styling */
+
 .class-schedule-form label {
   font-weight: bold;
   color: #333333;
   margin-bottom: 8px;
 }
+
 .class-schedule-form input,
 .class-schedule-form select {
   border: 1px solid #ccc;
@@ -287,7 +279,7 @@ button[type="submit"]:hover {
   width: 100%;
   margin-bottom: 15px;
 }
-/* Save Button Small Style */
+
 .class-schedule-form button {
   margin-top: 15px;
   padding: 5px 10px;
@@ -299,6 +291,7 @@ button[type="submit"]:hover {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .class-schedule-form button:hover {
   background-color: #45a049;
 }
