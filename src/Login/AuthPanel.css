@@ -254,13 +254,17 @@ form {
     color: black;
   }
 
-  .nav-button {
+  .nav-button, .toggle-button {
     font-weight: bold;
     text-shadow: rgb(29, 90, 30)  2px 2px 5px;
   }
 
   .footer p{
     width: 100%;
+  }
+
+  p {
+    font-weight: bold;
   }
 }
 
