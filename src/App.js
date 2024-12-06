@@ -7,7 +7,7 @@ import Admin from './Admin/AdminDashboard';
 function App() {
   return (
     <div>
-      <AuthPanel />
+      <Dashboard />
     </div>
   );
 }

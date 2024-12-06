@@ -8,7 +8,7 @@ function App() {
 
   const handleMenuClick = (panel) => {
     setActivePanel(panel);
-    setIsSidebarVisible(true); // Automatically hide the sidebar
+    setIsSidebarVisible(true);
   };
 
   const toggleSidebar = () => {
@@ -225,17 +225,6 @@ function App() {
                           />
                         </div>
                         <div>
-                          <label htmlFor="student-email">Email</label>
-                          <input
-                            type="email"
-                            id="student-email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required
-                          />
-                        </div>
-                        
-                        <div>
                           <label htmlFor="first-name">First Name</label>
                           <input
                             type="text"
@@ -243,13 +232,6 @@ function App() {
                             placeholder="Enter your First Name"
                             required
                           />
-                        </div>
-                        <div>
-                          <label htmlFor="gender">Gender</label>
-                            <select className="dropdown-gender">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            </select >
                         </div>
 
                         <div>
@@ -260,6 +242,24 @@ function App() {
                             placeholder="Enter your Middle Name"
                             required
                           />
+                        </div>
+                        <div>
+                          <label htmlFor="student-email">Email</label>
+                          <input
+                            type="email"
+                            id="student-email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                          />
+                        </div>
+
+                        <div>
+                          <label htmlFor="gender">Gender</label>
+                            <select className="dropdown-gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            </select >
                         </div>
                         <div>
                           <label htmlFor="student-age">Age</label>
